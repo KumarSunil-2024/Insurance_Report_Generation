@@ -31,7 +31,7 @@ public class ReportController {
 	public void PdfExport(XHttpServletResponse response) throws Exception{
 		response.setContentType("application/pdf");
 		response.addHeader("Content-Disposition", "attachment; filename=plans.pdf");
-		ser.exportExcel(response);
+		ser.exportPdf(response); 
 	}
 	
 	@GetMapping("/excel")

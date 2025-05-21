@@ -18,7 +18,7 @@ public class EmailUtils {
         
        try {
     	   MimeMessage msg=emailSender.createMimeMessage();
-    	   MimeMessageHelper help=new MimeMessageHelper(msg);
+    	   MimeMessageHelper help=new MimeMessageHelper(msg,true);
     	   help.setSubject(subject);
     	   help.setText(text, true);
     	   help.setTo(to);
